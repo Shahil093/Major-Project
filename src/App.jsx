@@ -10,6 +10,7 @@ import Bulb from "./Components/Bulb/Bulb";
 import Fan from "./Components/Fan/Fan";
 import Home from "./Components/Home/Home";
 import Locker from "./Components/Locker/Locker";
+import ResourceFiles from "./Components/ResourceFiles/ResourceFiles";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
           <Route path="/bulb" element={<Bulb />} />
           <Route path="/fan" element={<Fan />} />
           <Route path="/locker" element={<Locker/>} />
+          <Route path="/ResourceFiles" element={<ResourceFiles/>} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
